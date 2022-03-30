@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -5,7 +6,24 @@ import java.util.Scanner;
 public class SimilarStrings {
 
   public static void main(String[] args) {
-    Scanner stringScanner = new Scanner(System.in);
+    Console console = System.console();
+
+    int first = Integer.parseInt(console.readLine());
+
+    String[] firstStrings = new String[first];
+    for (int i = 0; i < firstStrings.length; i++) {
+      firstStrings[i] = console.readLine();
+    }
+
+    int second = Integer.parseInt(console.readLine());
+
+    String[] secondStrings = new String[second];
+    for (int i = 0; i < secondStrings.length; i++) {
+      secondStrings[i] = console.readLine();
+    }
+
+    //Для запуска через IDE
+    /*Scanner stringScanner = new Scanner(System.in);
 
     int first = Integer.parseInt(stringScanner.nextLine());
 
@@ -19,7 +37,7 @@ public class SimilarStrings {
     String[] secondStrings = new String[second];
     for (int i = 0; i < secondStrings.length; i++) {
       secondStrings[i] = stringScanner.nextLine();
-    }
+    }*/
 
     findSimilar(firstStrings, secondStrings);
   }
