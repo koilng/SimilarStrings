@@ -1,4 +1,4 @@
-# SimilarStrings
+# com.koilng.similarstrings.SimilarStrings
 ## Описание  
 Необходимо написать консольное прриложение на Java, в которое из коммандной строки передаются входные данные:
 
